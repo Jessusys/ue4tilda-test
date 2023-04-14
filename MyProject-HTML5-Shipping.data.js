@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'C:/Users/gorba/OneDrive/Документы/Unreal Projects/MyProject/Binaries/HTML5/MyProject-HTML5-Shipping.data';
-    var REMOTE_PACKAGE_BASE = 'MyProject-HTML5-Shipping.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/hv1uh8ena0mb5ks/MyProject-HTML5-Shipping.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/hv1uh8ena0mb5ks/MyProject-HTML5-Shipping.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -149,10 +149,10 @@ Module['FS_createPath']('/MyProject/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_C:/Users/gorba/OneDrive/Документы/Unreal Projects/MyProject/Binaries/HTML5/MyProject-HTML5-Shipping.data');
+              Module['removeRunDependency']('datafile_C:/Users/gorba/OneDrive/Г„Г®ГЄГіГ¬ГҐГ­ГІГ»/Unreal Projects/MyProject/Binaries/HTML5/MyProject-HTML5-Shipping.data');
 
     };
-    Module['addRunDependency']('datafile_C:/Users/gorba/OneDrive/Документы/Unreal Projects/MyProject/Binaries/HTML5/MyProject-HTML5-Shipping.data');
+    Module['addRunDependency']('datafile_C:/Users/gorba/OneDrive/Г„Г®ГЄГіГ¬ГҐГ­ГІГ»/Unreal Projects/MyProject/Binaries/HTML5/MyProject-HTML5-Shipping.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
